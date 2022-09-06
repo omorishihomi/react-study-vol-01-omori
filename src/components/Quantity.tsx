@@ -11,8 +11,10 @@ export const Quantity: FC<Props> = ({ count}) => {
         const items = [];
         for (let i = 0; i < count; i++) {
             const selectedQuantity = i + 1;
-            items.push(<option key={keyCount}>{selectedQuantity}</option>);
-            keyCount++;
+            if (i < 10) {
+                items.push(<option key={keyCount}>{selectedQuantity}</option>);
+                keyCount++;
+            }
         }
         return items;
         })()}
