@@ -1,17 +1,10 @@
-import { FC, useState } from 'react';
-import styled from 'styled-components';
-import { FormProduct } from "./FormProduct";
+import { FC } from 'react';
 
 type Props = {
     count: number;
 };
 
 export const Quantity: FC<Props> = ({ count}) => {
-    // const [quantity, setQuantity] = useState(selectedQuantity);
-    // const countQuantity = (event: { currentTarget: { value: any; }; }) => {
-    //     setQuantity(Number(event.currentTarget.value));
-
-    // };
     let keyCount = 0;
     return <>
        {(() => {
